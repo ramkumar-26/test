@@ -2,22 +2,25 @@ package star;
 
 import java.util.Scanner;
 
-public class LeftTriangleStarPattern {
+public class PyramidStarPattern {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter n");
         int n = sc.nextInt();
 
-        for(int i=0;i<n;i++){
-            //space loop
-            for (int j=2*(n-i); j>=0; j--)
-            {
+        for (int i=0;i<n;i++){
+            //space
+            for(int j=i;j<n;j++){
                 System.out.print(" ");
             }
-            for(int j=0;j<=i;j++) {
+            for(int j=0;j<=i;j++){
                 System.out.print("* ");
             }
+
+
             System.out.println();
+
         }
+
     }
 }
