@@ -17,7 +17,6 @@ public class PyramidStarPattern {
                 System.out.print("* ");
             }
 
-
             System.out.println();
 
         }
